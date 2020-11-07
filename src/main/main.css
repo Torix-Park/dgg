@@ -1,0 +1,13 @@
+.main{
+  text-align: center;
+  margin-left: 6%;
+}
+.main-container{
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+}
+.nav-clock{
+    margin-top: 2%;
+    width: 50%;
+}
