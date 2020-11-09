@@ -1,13 +1,68 @@
-.main{
-  text-align: center;
-  margin-left: 6%;
+@font-face {
+   font-family: "KOTRA_BOLD-Bold";
+   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
 }
-.main-container{
-    width: 100%;
-    float: left;
-    margin-top: 2%;
+.main h1 {
+   margin: 0;
+   text-align: center;
+   padding-top: 1%;
 }
-.nav-clock{
-    margin-top: 2%;
-    width: 50%;
+.main-container {
+   min-height: 91.4vh;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.grid {
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 150px);
+   grid-template-rows: repeat(3, 150px);
+   transform: rotate(45deg);
+}
+.main-button{
+   background:rgb(0, 0, 0);
+   border: 1px solid rgb(255, 255, 255);
+   box-sizing: border-box;
+   color: white;
+   box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+   border-radius: 2px;
+   cursor: pointer;
+   text-decoration: none;
+   text-align: center;
+}
+.main-button p {
+   text-align: center;
+   padding-top: 35%;
+   padding-right: 35%;
+   margin: 0;
+   font-size: 20px;
+   font-family: "KOTRA_BOLD-Bold";
+   transform: rotate(-45deg);
+}
+
+.main-button {
+   transition-duration: 0.5s;
+   overflow: hidden;
+}
+
+.main-button:hover {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   border: 1px solid rgba(0, 0, 0,0.25);
+}
+
+.main-button > .test {
+   display: none;
+}
+
+.main-button:hover > .test {
+   display: block;
+   transform: rotate(-45deg);
+}
+.main-button:hover > .content {
+   display: none;
 }
