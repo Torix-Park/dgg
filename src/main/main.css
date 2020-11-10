@@ -6,6 +6,8 @@
 }
 .main h1 {
    margin: 0;
+   z-index: 2;
+   opacity: 1;
    text-align: center;
    padding-top: 1%;
 }
@@ -23,8 +25,8 @@
    grid-template-rows: repeat(3, 150px);
    transform: rotate(45deg);
 }
-.main-button{
-   background:rgb(0, 0, 0);
+.main-button {
+   background: rgb(0, 0, 0);
    border: 1px solid rgb(255, 255, 255);
    box-sizing: border-box;
    color: white;
@@ -52,7 +54,7 @@
 .main-button:hover {
    background-color: rgb(255, 255, 255);
    color: rgb(0, 0, 0);
-   border: 1px solid rgba(0, 0, 0,0.25);
+   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .main-button > .test {

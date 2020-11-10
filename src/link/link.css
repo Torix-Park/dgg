@@ -1,25 +1,43 @@
-.link{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+@import "react-slideshow-image/dist/styles.css";
+.link {
+   width: 100%;
+   margin: 0;
+   padding: 0;
 }
-.link img{
-    width: 10%;
-    position: absolute;
-    padding: 1%;
-    margin-bottom: 1%;
-    right: 0;
-    bottom: 0;
+.loading {
+   width: 10%;
+   position: absolute;
+   padding: 1%;
+   margin-bottom: 1%;
+   right: 0;
+   bottom: 0;
 }
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: gray;
+.Slide {
+   position: fixed;
 }
-.footer > p{
-    margin: 0;
+
+.slide-container {
+   width: 100%;
+   margin: auto;
+   bottom: 0;
+   position: fixed;
+}
+
+.lazy{
+   opacity: 0.7 !important;
+   z-index: -100;
+   width: 100%;
+}
+
+.footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   color: white;
+   background-color: gray;
+}
+.footer > p {
+   margin: 0;
 }

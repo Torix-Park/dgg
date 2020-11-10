@@ -9,18 +9,38 @@ import Raid from "../raid/raid";
 import Storage from "../storage/storage";
 import Weapon from "../weapon/weapon";
 import Wonder from "../wonder/wonder";
-import "./link.css";
-import Loading from "../asset/loading.gif";
+import { Slide } from "react-slideshow-image";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import "./link.css";
 
 export default class Link extends React.Component {
    render() {
+      const properties = {
+         duration: 3000,
+         autoplay: true,
+         transitionDuration: 2000,
+         arrows: false,
+         infinite: true,
+         easing: "ease",
+      };
+      const slideImages = [
+         "https://www.bungie.net/7/ca/destiny/products/beyondlight/media_wallpaper_5.png",
+         "https://www.bungie.net/7/ca/destiny/products/beyondlight/media_wallpaper_6.png",
+         "https://www.bungie.net/7/ca/destiny/products/beyondlight/media_wallpaper_1.png",
+      ];
       return (
          <div className="link">
-            <img src={Loading} />
+            <div className="slide-container">
+               <Slide ref={this.slideRef} {...properties}>
+                  {slideImages.map((each, index) => (
+                     <div key={index} className="each-slide">
+                        <img className="lazy" src={each} alt="sample" />
+                     </div>
+                  ))}
+               </Slide>
+            </div>
 
             <Router>
-               {/* <Sidebar></Sidebar> */}
                <Switch>
                   <Route exact path="/" component={Main}></Route>
                   <Route path="/PVP" component={Pvp}></Route>
@@ -35,7 +55,7 @@ export default class Link extends React.Component {
                </Switch>
             </Router>
             <div className="footer">
-               <p>BY : Torix05</p>
+               <p>Created By : Torix05</p>
             </div>
          </div>
       );
