@@ -1,0 +1,17 @@
+npm i -g create-react-app
+
+create-react-app .
+yarn build
+npm i -g firebase-tools
+firebase init ( database , hosting 선택 )
+database.json
+build
+N
+N
+N
+firebase serve
+firebase deploy
+(build 는 yarn으로 firebase설치, react설치는 npm으로 )
+npm install -S firebase
+
+참고 : https://chanspark.github.io/2017/12/06/Firebase-%EA%B3%B5%EB%B6%80.html
