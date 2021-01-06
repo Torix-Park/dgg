@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Osiris extends React.Component{
+export default class Season extends React.Component{
     render(){
         return(
             <div>
