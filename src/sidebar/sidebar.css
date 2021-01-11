@@ -7,7 +7,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .side h1 {
   margin: 0;
   z-index: 2;
@@ -55,7 +54,7 @@ nav.side-menu.expanded {
 .side-menu {
   background: #222;
   border-right: 1px solid #212121;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   height: 100%;
